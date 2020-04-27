@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public class ServeiAlumnat {
+public class ServeiAlumnat implements Servei {
 
 	@Autowired
 	RepositoriAlumnes alumnes;
@@ -33,6 +33,12 @@ public class ServeiAlumnat {
 		}
 		
 		return false;
+	}
+	
+	public int alumnesQuantitat() {
+		int numeroAlumnes = 0;
+		numeroAlumnes = alumnes.llistaAlumnes().size();
+		return numeroAlumnes;
 	}
 	
 }
