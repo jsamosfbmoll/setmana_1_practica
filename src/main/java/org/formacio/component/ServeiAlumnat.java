@@ -1,6 +1,8 @@
 package org.formacio.component;
 
+import org.springframework.stereotype.Repository;
 
+@Repository
 public class ServeiAlumnat {
 
 	
