@@ -2,10 +2,9 @@ package org.formacio.component;
 
 import java.util.HashMap;
 import java.util.Map;
+import org.springframework.stereotype.Component;
 
-import org.springframework.stereotype.Repository;
-
-@Repository
+@Component
 public class ServeiAlumnat {
 
 	Map<Integer, String> alumnes = new HashMap<Integer, String>();
