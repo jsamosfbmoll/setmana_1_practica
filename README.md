@@ -2,7 +2,7 @@
 
 ## Proyecto con spring
 
-Ejercicio donde el objetivo era superar los casos test (sin modificarlos) haciendo caso de las directrices en los comentarios del proyecto y en el fichero [LEEME.txt](LEEME.txt).
+Ejercicio donde el objetivo era superar los casos test (sin modificarlos) haciendo caso de las directrices en los comentarios del proyecto y en el fichero [LLEGIM.txt](LLEGIM.txt).
 
 En el commit inicial se encuentra el ejercicio sin modificar.
 
