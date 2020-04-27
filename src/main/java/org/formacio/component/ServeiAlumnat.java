@@ -2,12 +2,15 @@ package org.formacio.component;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 public class ServeiAlumnat {
 
-	Map<Integer, String> alumnes = new HashMap<Integer, String>();
+	@Autowired
+	RepositoriAlumnes alumnes;
 	
 	/**
 	 * ha de donar d'alta a la base de dades d'alumnes l'alumne indicat amb 
@@ -17,7 +20,7 @@ public class ServeiAlumnat {
 	 */
 	public boolean matricula (int id, String alumne) {
 		if (alumne != null) {
-			alumnes.put(id, alumne);
+			alumnes.altaAlumne(id, alumne);
 			return true;
 		}
 		
